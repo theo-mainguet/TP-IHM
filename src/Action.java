@@ -18,6 +18,10 @@ public class Action {
 		return this.label;
 	}
 	
+	public String getText(){
+		return label.getText();
+	}
+	
 	public void setLabel(String valeur){
 		label.setText(valeur);
 	}

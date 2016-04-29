@@ -40,9 +40,12 @@ public class Slider2 implements MouseListener{
 
 	public void mouseClicked(MouseEvent e) {
 		int button = e.getButton();
-		if (button == MouseEvent.BUTTON3){
+		if (button == MouseEvent.BUTTON1){
 			label.setValeur(1);
+		}else if(button == MouseEvent.BUTTON3){
+			label.setValeur(-1);
 		}
+		slider.setValue(Integer.parseInt(label.getText()));
 	}
 
 	public void mouseEntered(MouseEvent e) {
