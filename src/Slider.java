@@ -4,6 +4,7 @@ import java.awt.Dimension;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JSlider;
+import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
@@ -19,6 +20,7 @@ public class Slider {
 		slider = new JSlider(1, 100);
 		label = new Label("" + slider.getValue());		//CLASSE EXTERNE
 		//label = new JLabel(""+slider.getValue()); 		CLASSE INTERNE ANONYME
+		this.label.getJLabel().setHorizontalAlignment(SwingConstants.CENTER);
 		JFrame fenetre = new JFrame("Slider");
 		fenetre.setPreferredSize(new Dimension(200, 80));
 		fenetre.pack();
